@@ -58,26 +58,12 @@
 				
 				<a href="#" id="btn-run" onClick="startGameBeans();return false;">Run</a>
 				<select style="color: #ffffff;" id="select-version" onChange="colorVersion()">
-					<option>31-alpha</option>
-					<option>30-alpha</option>
-					<option>29-alpha</option>
-					<option>28-alpha</option>
-					<option>27-alpha</option>
-					<option>26-alpha</option>
-					<option>25-alpha</option>
-					<option>24-alpha</option>
-					<option>23-alpha</option>
-					<option>22-alpha</option>
-					<option>21-alpha</option>
-					<option>20-alpha</option>
-					<option>19-alpha</option>
-					<option>18-alpha</option>
-					<option>17-alpha</option>
-					<option>16-alpha</option>
-					<option>15-alpha</option>
-					<option>14-alpha</option>
-					<option>13-alpha</option>
-					<option>12-alpha</option>
+					<?php
+					$files = array_filter(glob('ide/*'), 'is_dir');
+					for ($i=count($files)-1; $i>0; $i--) {
+						print_r("<option>" . basename($files[$i]) . "</option>");
+					}
+					?>
 				</select>
 				<a href="docs/index.html" id="btn-tutorial">Tutorial</a>
 			</div>
