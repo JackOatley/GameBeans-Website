@@ -6,11 +6,17 @@
 		<title>GameBeans.io</title>
 		<meta name="author" content="Jack Oatley"/>
 		<meta name="keywords" content="HTML5,Game,Beans,Creator,Maker,JavaScript,Visual"/>
-		<meta name="description" content="A free web-based game making tool">
+		<meta name="description" content="A free web-based game making tool.">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@gamebeansio">
+		<meta name="twitter:creator" content="@f_oatley">
+		<meta name="twitter:title" content="GameBeans JavaScript IDE.">
+		<meta name="twitter:description" content="A free web-based game making tool.">
+		<meta name="twitter:image" content="http://gamebeans.io/images/card.png">
 		<meta property="og:title" content="GameBeans.io"/>
 		<meta property="og:type" content="website"/>
 		<meta property="og:url" content="http://gamebeans.io/"/>
-		<meta property="og:image" content="http://gamebeans.io/images/logo-128.png"/>
+		<meta property="og:image" content="http://gamebeans.io/images/card.png"/>
 		<link rel="stylesheet" href="style.css"/>
 	</head>
 	
@@ -22,7 +28,7 @@
 				<nav>
 					<a target="_blank" href="./docs/">Docs</a>
 					<a target="_blank" href="./examples/">Examples</a>
-					<a>Tutorials</a>
+					<a target="_blank" href="./docs/">Tutorials</a>
 					<a target="_blank" href="https://discord.gg/R3zDmEv">Community</a>
 				</nav>
 			</div>
