@@ -19,9 +19,9 @@
 		<meta property="og:image" content="http://gamebeans.io/images/card.png"/>
 		<link rel="stylesheet" href="style.css"/>
 	</head>
-	
+
 	<body>
-	
+
 		<header id="navbar">
 			<div>
 				<h1>GameBeans.io</h1>
@@ -33,19 +33,19 @@
 				</nav>
 			</div>
 		</header>
-		
+
 		<div id="titlebanner">
 			<h1>GameBeans</h1>
 			<p>100% FREE web-based game creation tool</p>
 			<div>
-			
+
 				<script>
 				function startGameBeans() {
 					var select = document.getElementById("select-version");
 					var version = select.options[select.selectedIndex].text;
 					window.open("http://gamebeans.io/ide/" + version + "/");
 				}
-				
+
 				function colorOptions() {
 					var select = document.getElementById("select-version");
 					for(var n=0; n<select.options.length; n++) {
@@ -54,14 +54,14 @@
 							? "#85D100" : "#FF6666";
 					}
 				}
-				
+
 				function colorVersion() {
 					var select = document.getElementById("select-version");
 					select.style.background = (select.selectedIndex === 0)
-						? "#85D100" : "#FF6666";	
+						? "#85D100" : "#FF6666";
 				}
 				</script>
-				
+
 				<a href="#" id="btn-run" onClick="startGameBeans();return false;">Run</a>
 				<select style="color: #ffffff;" id="select-version" onChange="colorVersion()">
 					<?php
@@ -73,14 +73,14 @@
 				</select>
 				<a href="docs/index.html" id="btn-tutorial">Tutorial</a>
 			</div>
-			
+
 			<script>
 				colorOptions();
 				colorVersion()
 			</script>
-			
+
 		</div>
-		
+
 		<div id="supported-browsers">
 			<h3>Supports popular browsers:</h3>
 			<br>
@@ -88,7 +88,7 @@
 			<img title="Opera" src="images/Opera_2015_icon.svg">
 			<img title="Firefox" src="images/Firefox_Logo_2017.svg">
 		</div>
-		
+
 		<div id="maincontent">
 			<div class="contentColumn">
 				<h3>I Want To Make Games!</h3>
@@ -111,13 +111,13 @@
 				<p>Don't want or need an IDE? We understand, everybody has different ways in which they like to work. <span class="gb-blue">GameBeans</span> can also be used as a JavaScript Library for a code only solution to create your games. You'll still have full access to <span class="gb-blue">GameBeans</span> objects > events > actions system through code, so creating games in the code-editor of your choice could not be faster!</p>
 			</div>
 			<div class="contentColumn">
-				<h3>Alpha.</h3>
-				<p><span class="gb-blue">GameBeans</span> is currently under early development. You can get involved in the development by joining our <a href="https://discord.gg/R3zDmEv" class="gb-red">Discord</a> server and telling us of your experiences using <span class="gb-blue">GameBeans</span>, and what we can do to help make it the right tool for you! <span class="gb-grey">Note: some information on this page outlines goals if not existing features.</span></p>
+				<h3>Beta.</h3>
+				<p><span class="gb-blue">GameBeans</span> is currently under early development. You can get involved in the development by joining our <a href="https://discord.gg/R3zDmEv" class="gb-red">Discord</a> server and telling us of your experiences using <span class="gb-blue">GameBeans</span>, and what we can do to help make it the right tool for you!</p>
 			</div>
 		</div>
-		
+
 		<hr>
-		
+
 		<div id="examples">
 			<div class="example">
 				<h3>Object > Event > Action driven.</h3>
@@ -141,11 +141,11 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<footer>
 			<p>Copyright @Jack Oatley 2017 - 2018</p>
 		</footer>
-		
+
 	</body>
-	
+
 </html>
