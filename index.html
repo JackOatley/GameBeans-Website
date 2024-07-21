@@ -36,49 +36,17 @@
 
 		<div id="titlebanner">
 			<h1>GameBeans</h1>
-			<p>100% FREE web-based game creation tool</p>
+			<p>FREE web-based game creation tool</p>
 			<div>
-
-				<script>
-				function startGameBeans() {
-					var select = document.getElementById("select-version");
-					var version = select.options[select.selectedIndex].text;
-					window.open("http://gamebeans.io/ide/" + version + "/");
-				}
-
-				function colorOptions() {
-					var select = document.getElementById("select-version");
-					for(var n=0; n<select.options.length; n++) {
-						var option = select.options[n];
-						option.style.background = (n === 0)
-							? "#85D100" : "#FF6666";
-					}
-				}
-
-				function colorVersion() {
-					var select = document.getElementById("select-version");
-					select.style.background = (select.selectedIndex === 0)
-						? "#85D100" : "#FF6666";
-				}
-				</script>
-
-				<a href="#" id="btn-run" onClick="startGameBeans();return false;">Run</a>
-				<select style="color: #ffffff;" id="select-version" onChange="colorVersion()">
-					<?php
-					$files = array_filter(glob('ide/*'), 'is_dir');
-					for ($i=count($files)-1; $i>0; $i--) {
-						print_r("<option>" . basename($files[$i]) . "</option>");
-					}
-					?>
-				</select>
+				<a href="#" id="btn-run" onClick="startGameBeans();return false;">Run on Web</a>
+				<select style="color: #ffffff;" id="select-version" onChange="colorVersion()"></select>
 				<a href="docs/index.html" id="btn-tutorial">Tutorial</a>
 			</div>
-
-			<script>
-				colorOptions();
-				colorVersion()
-			</script>
-
+			<div>
+				<span>Native versions:</span>
+				<a href="downloads/linux" id="btn-run" download>Linux</a>
+				<a href="downloads/windows" id="btn-run" download>Windows</a>
+			</div>
 		</div>
 
 		<p id="intro-text">
@@ -156,6 +124,8 @@
 		<footer>
 			<p>Copyright @Jack Oatley 2017 - 2018</p>
 		</footer>
+
+		<script src="index.js"></script>
 
 	</body>
 
